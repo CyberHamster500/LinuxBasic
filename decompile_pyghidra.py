@@ -12,7 +12,7 @@ from pathlib import Path
 
 # Binary to analyze
 binary_path = "/home/cch/class/Linux/ch15-firmware/_a1004v_kr_12_024.bin.extracted/squashfs-root/cgibin/upgrade.cgi"
-output_file = "upgrade_decompile.txt"
+output_file = "upgrade_decompile.c"
 
 # Launch Ghidra
 with pyghidra.open_program(binary_path, analyze=True) as flat_api:
